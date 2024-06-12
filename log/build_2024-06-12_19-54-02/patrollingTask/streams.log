@@ -1,0 +1,15 @@
+[0.335s] Invoking command in '/home/joel/Descargas/IR2121/build/patrollingTask': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/joel/Descargas/IR2121/build/patrollingTask -- -j8 -l8
+[0.394s] [35m[1mScanning dependencies of target publisher[0m
+[0.438s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o[0m
+[2.223s] [01m[K/home/joel/Descargas/IR2121/patrollingTask/src/publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.223s] [01m[K/home/joel/Descargas/IR2121/patrollingTask/src/publisher.cpp:95:39:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >, geometry_msgs::msg::PoseStamped_<std::allocator<void> > >::value_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+[2.223s]    95 |     if (std::abs(p_x-goals[goal_index][01;31m[K[[m[K0]) < 0.005 && std::abs(p_y-goals[goal_index][1]) < 0.005 && t >= 100)
+[2.223s]       |                                       [01;31m[K^[m[K
+[2.223s] [01m[K/home/joel/Descargas/IR2121/patrollingTask/src/publisher.cpp:95:85:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >, geometry_msgs::msg::PoseStamped_<std::allocator<void> > >::value_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} and ‘[01m[Kint[m[K’)
+[2.224s]    95 | als[goal_index][0]) < 0.005 && std::abs(p_y-goals[goal_index][01;31m[K[[m[K1]) < 0.005 && t >= 100)
+[2.224s]       |                                                              [01;31m[K^[m[K
+[2.224s] 
+[4.176s] make[2]: *** [CMakeFiles/publisher.dir/build.make:63: CMakeFiles/publisher.dir/src/publisher.cpp.o] Error 1
+[4.177s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/publisher.dir/all] Error 2
+[4.177s] make: *** [Makefile:141: all] Error 2
+[4.180s] Invoked command in '/home/joel/Descargas/IR2121/build/patrollingTask' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/joel/Descargas/IR2121/build/patrollingTask -- -j8 -l8

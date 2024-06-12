@@ -1,0 +1,84 @@
+[0.000000] (-) TimerEvent: {}
+[0.000239] (patrollingTask) JobQueued: {'identifier': 'patrollingTask', 'dependencies': OrderedDict()}
+[0.001058] (patrollingTask) JobStarted: {'identifier': 'patrollingTask'}
+[0.099721] (-) TimerEvent: {}
+[0.201600] (-) TimerEvent: {}
+[0.302878] (-) TimerEvent: {}
+[0.343054] (patrollingTask) JobProgress: {'identifier': 'patrollingTask', 'progress': 'cmake'}
+[0.344197] (patrollingTask) JobProgress: {'identifier': 'patrollingTask', 'progress': 'build'}
+[0.345252] (patrollingTask) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/joel/Descargas/IR2121/build/patrollingTask', '--', '-j8', '-l8'], 'cwd': '/home/joel/Descargas/IR2121/build/patrollingTask', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'joel'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '1785'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/joel'), ('OLDPWD', '/home/joel'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1605'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/joel/Descargas/IR2121/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'joel'), ('JOURNAL_STREAM', '8:49333'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'joel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/joel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/joel:@/tmp/.ICE-unix/1823,unix/joel:/tmp/.ICE-unix/1823'), ('INVOCATION_ID', '9784b7e454a1428eb29620008502664a'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4262599e_dc3a_41cf_9d46_23a9d147f229'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.128'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joel/Descargas/IR2121/install/patrollingTask:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joel/Descargas/IR2121/build/patrollingTask'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/joel/Descargas/IR2121/install/patrollingTask:/opt/ros/foxy')]), 'shell': False}
+[0.403038] (-) TimerEvent: {}
+[0.411269] (patrollingTask) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target publisher\x1b[0m\n'}
+[0.454395] (patrollingTask) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o\x1b[0m\n'}
+[0.503182] (-) TimerEvent: {}
+[0.603630] (-) TimerEvent: {}
+[0.703992] (-) TimerEvent: {}
+[0.804375] (-) TimerEvent: {}
+[0.904729] (-) TimerEvent: {}
+[1.005061] (-) TimerEvent: {}
+[1.105428] (-) TimerEvent: {}
+[1.205800] (-) TimerEvent: {}
+[1.306175] (-) TimerEvent: {}
+[1.406530] (-) TimerEvent: {}
+[1.506938] (-) TimerEvent: {}
+[1.607336] (-) TimerEvent: {}
+[1.707690] (-) TimerEvent: {}
+[1.808002] (-) TimerEvent: {}
+[1.908280] (-) TimerEvent: {}
+[2.008593] (-) TimerEvent: {}
+[2.108915] (-) TimerEvent: {}
+[2.209245] (-) TimerEvent: {}
+[2.277334] (patrollingTask) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joel/Descargas/IR2121/patrollingTask/src/publisher.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.277558] (patrollingTask) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joel/Descargas/IR2121/patrollingTask/src/publisher.cpp:70:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::count\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.277664] (patrollingTask) StderrLine: {'line': b'   70 |         \x1b[01;31m\x1b[Kcount\x1b[m\x1b[K+=1;\n'}
+[2.277748] (patrollingTask) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.277828] (patrollingTask) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kstd::count\x1b[m\x1b[K\n'}
+[2.278056] (patrollingTask) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:62\x1b[m\x1b[K,\n'}
+[2.278179] (patrollingTask) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp:18\x1b[m\x1b[K,\n'}
+[2.278367] (patrollingTask) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:8\x1b[m\x1b[K,\n'}
+[2.278498] (patrollingTask) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7\x1b[m\x1b[K,\n'}
+[2.278585] (patrollingTask) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/joel/Descargas/IR2121/patrollingTask/src/publisher.cpp:2\x1b[m\x1b[K:\n'}
+[2.278659] (patrollingTask) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:4113:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::count\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.278735] (patrollingTask) StderrLine: {'line': b' 4113 |     \x1b[01;36m\x1b[Kcount\x1b[m\x1b[K(_InputIterator __first, _InputIterator __last, const _Tp& __value)\n'}
+[2.278807] (patrollingTask) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.279061] (patrollingTask) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joel/Descargas/IR2121/patrollingTask/src/publisher.cpp:72:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpx\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kp_x\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.279191] (patrollingTask) StderrLine: {'line': b'   72 |         if (std::abs(\x1b[01;31m\x1b[Kpx\x1b[m\x1b[K-goals[goal_index].pose.position.x)<0.5 && std::abs(py-goals[goal_index].pose.position.y)<0.5 && count>500){\n'}
+[2.279275] (patrollingTask) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.279352] (patrollingTask) StderrLine: {'line': b'      |                      \x1b[32m\x1b[Kp_x\x1b[m\x1b[K\n'}
+[2.280391] (patrollingTask) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joel/Descargas/IR2121/patrollingTask/src/publisher.cpp:72:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpy\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kp_y\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.280592] (patrollingTask) StderrLine: {'line': b'   72 | d::abs(px-goals[goal_index].pose.position.x)<0.5 && std::abs(\x1b[01;31m\x1b[Kpy\x1b[m\x1b[K-goals[goal_index].pose.position.y)<0.5 && count>500){\n'}
+[2.280730] (patrollingTask) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.280859] (patrollingTask) StderrLine: {'line': b'      |                                                              \x1b[32m\x1b[Kp_y\x1b[m\x1b[K\n'}
+[2.281779] (patrollingTask) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joel/Descargas/IR2121/patrollingTask/src/publisher.cpp:74:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.281944] (patrollingTask) StderrLine: {'line': b'   74 |             \x1b[01;31m\x1b[Ki\x1b[m\x1b[K+=1;\n'}
+[2.282072] (patrollingTask) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.309370] (-) TimerEvent: {}
+[2.409684] (-) TimerEvent: {}
+[2.509999] (-) TimerEvent: {}
+[2.610253] (-) TimerEvent: {}
+[2.710557] (-) TimerEvent: {}
+[2.810853] (-) TimerEvent: {}
+[2.911195] (-) TimerEvent: {}
+[3.011503] (-) TimerEvent: {}
+[3.111838] (-) TimerEvent: {}
+[3.212127] (-) TimerEvent: {}
+[3.312502] (-) TimerEvent: {}
+[3.412842] (-) TimerEvent: {}
+[3.513215] (-) TimerEvent: {}
+[3.613573] (-) TimerEvent: {}
+[3.713879] (-) TimerEvent: {}
+[3.814291] (-) TimerEvent: {}
+[3.914627] (-) TimerEvent: {}
+[4.014925] (-) TimerEvent: {}
+[4.115253] (-) TimerEvent: {}
+[4.215580] (-) TimerEvent: {}
+[4.315872] (-) TimerEvent: {}
+[4.349586] (patrollingTask) StderrLine: {'line': b'make[2]: *** [CMakeFiles/publisher.dir/build.make:63: CMakeFiles/publisher.dir/src/publisher.cpp.o] Error 1\n'}
+[4.349917] (patrollingTask) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/publisher.dir/all] Error 2\n'}
+[4.350159] (patrollingTask) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[4.353349] (patrollingTask) CommandEnded: {'returncode': 2}
+[4.416124] (-) TimerEvent: {}
+[4.517959] (-) TimerEvent: {}
+[4.620264] (-) TimerEvent: {}
+[4.697155] (patrollingTask) JobEnded: {'identifier': 'patrollingTask', 'rc': 2}
+[4.708313] (-) EventReactorShutdown: {}
