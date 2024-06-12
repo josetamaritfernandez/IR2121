@@ -1,0 +1,26 @@
+[0.249s] Invoking command in '/home/joel/Descargas/IR2121/build/patrollingTask': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/joel/Descargas/IR2121/build/patrollingTask -- -j8 -l8
+[0.299s] [35m[1mScanning dependencies of target publisher[0m
+[0.333s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o[0m
+[5.367s] [100%] [32m[1mLinking CXX executable publisher[0m
+[5.695s] [100%] Built target publisher
+[5.712s] Invoked command in '/home/joel/Descargas/IR2121/build/patrollingTask' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/joel/Descargas/IR2121/build/patrollingTask -- -j8 -l8
+[5.759s] Invoking command in '/home/joel/Descargas/IR2121/build/patrollingTask': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/joel/Descargas/IR2121/build/patrollingTask
+[5.770s] -- Install configuration: ""
+[5.770s] -- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/lib/patrollingTask/publisher
+[5.773s] -- Set runtime path of "/home/joel/Descargas/IR2121/install/patrollingTask/lib/patrollingTask/publisher" to ""
+[5.774s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/package_run_dependencies/patrollingTask
+[5.774s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/parent_prefix_path/patrollingTask
+[5.774s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/ament_prefix_path.sh
+[5.774s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/ament_prefix_path.dsv
+[5.775s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/path.sh
+[5.775s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/path.dsv
+[5.775s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.bash
+[5.775s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.sh
+[5.775s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.zsh
+[5.775s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.dsv
+[5.775s] -- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/package.dsv
+[5.775s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/packages/patrollingTask
+[5.776s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/cmake/patrollingTaskConfig.cmake
+[5.776s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/cmake/patrollingTaskConfig-version.cmake
+[5.776s] -- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/package.xml
+[5.777s] Invoked command in '/home/joel/Descargas/IR2121/build/patrollingTask' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/joel/Descargas/IR2121/build/patrollingTask

@@ -1,0 +1,117 @@
+[0.000000] (-) TimerEvent: {}
+[0.000869] (patrollingTask) JobQueued: {'identifier': 'patrollingTask', 'dependencies': OrderedDict()}
+[0.000924] (patrollingTask) JobStarted: {'identifier': 'patrollingTask'}
+[0.099478] (-) TimerEvent: {}
+[0.200089] (-) TimerEvent: {}
+[0.303118] (-) TimerEvent: {}
+[0.330363] (patrollingTask) JobProgress: {'identifier': 'patrollingTask', 'progress': 'cmake'}
+[0.331062] (patrollingTask) JobProgress: {'identifier': 'patrollingTask', 'progress': 'build'}
+[0.332765] (patrollingTask) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/joel/Descargas/IR2121/build/patrollingTask', '--', '-j8', '-l8'], 'cwd': '/home/joel/Descargas/IR2121/build/patrollingTask', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'joel'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '1785'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/joel'), ('OLDPWD', '/home/joel'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1605'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/joel/Descargas/IR2121/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'joel'), ('JOURNAL_STREAM', '8:49333'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'joel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/joel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/joel:@/tmp/.ICE-unix/1823,unix/joel:/tmp/.ICE-unix/1823'), ('INVOCATION_ID', '9784b7e454a1428eb29620008502664a'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4262599e_dc3a_41cf_9d46_23a9d147f229'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.128'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joel/Descargas/IR2121/install/patrollingTask:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joel/Descargas/IR2121/build/patrollingTask'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/joel/Descargas/IR2121/install/patrollingTask:/opt/ros/foxy')]), 'shell': False}
+[0.403087] (patrollingTask) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target publisher\x1b[0m\n'}
+[0.403374] (-) TimerEvent: {}
+[0.443374] (patrollingTask) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o\x1b[0m\n'}
+[0.503531] (-) TimerEvent: {}
+[0.603844] (-) TimerEvent: {}
+[0.704170] (-) TimerEvent: {}
+[0.804455] (-) TimerEvent: {}
+[0.904713] (-) TimerEvent: {}
+[1.005049] (-) TimerEvent: {}
+[1.105328] (-) TimerEvent: {}
+[1.205652] (-) TimerEvent: {}
+[1.306136] (-) TimerEvent: {}
+[1.406504] (-) TimerEvent: {}
+[1.506910] (-) TimerEvent: {}
+[1.607244] (-) TimerEvent: {}
+[1.707542] (-) TimerEvent: {}
+[1.807943] (-) TimerEvent: {}
+[1.908326] (-) TimerEvent: {}
+[2.008602] (-) TimerEvent: {}
+[2.108912] (-) TimerEvent: {}
+[2.209261] (-) TimerEvent: {}
+[2.309584] (-) TimerEvent: {}
+[2.409969] (-) TimerEvent: {}
+[2.510463] (-) TimerEvent: {}
+[2.610759] (-) TimerEvent: {}
+[2.711046] (-) TimerEvent: {}
+[2.811381] (-) TimerEvent: {}
+[2.911770] (-) TimerEvent: {}
+[3.012078] (-) TimerEvent: {}
+[3.112355] (-) TimerEvent: {}
+[3.212686] (-) TimerEvent: {}
+[3.313013] (-) TimerEvent: {}
+[3.413389] (-) TimerEvent: {}
+[3.513669] (-) TimerEvent: {}
+[3.613969] (-) TimerEvent: {}
+[3.714300] (-) TimerEvent: {}
+[3.814627] (-) TimerEvent: {}
+[3.915027] (-) TimerEvent: {}
+[4.015406] (-) TimerEvent: {}
+[4.115778] (-) TimerEvent: {}
+[4.216127] (-) TimerEvent: {}
+[4.316410] (-) TimerEvent: {}
+[4.416683] (-) TimerEvent: {}
+[4.517017] (-) TimerEvent: {}
+[4.617348] (-) TimerEvent: {}
+[4.717745] (-) TimerEvent: {}
+[4.818091] (-) TimerEvent: {}
+[4.918402] (-) TimerEvent: {}
+[5.018685] (-) TimerEvent: {}
+[5.119007] (-) TimerEvent: {}
+[5.219311] (-) TimerEvent: {}
+[5.319591] (-) TimerEvent: {}
+[5.419911] (-) TimerEvent: {}
+[5.520273] (-) TimerEvent: {}
+[5.620551] (-) TimerEvent: {}
+[5.720883] (-) TimerEvent: {}
+[5.821245] (-) TimerEvent: {}
+[5.921612] (-) TimerEvent: {}
+[6.022028] (-) TimerEvent: {}
+[6.122304] (-) TimerEvent: {}
+[6.222765] (-) TimerEvent: {}
+[6.323048] (-) TimerEvent: {}
+[6.423341] (-) TimerEvent: {}
+[6.523622] (-) TimerEvent: {}
+[6.623887] (-) TimerEvent: {}
+[6.724197] (-) TimerEvent: {}
+[6.824499] (-) TimerEvent: {}
+[6.924785] (-) TimerEvent: {}
+[7.025112] (-) TimerEvent: {}
+[7.125419] (-) TimerEvent: {}
+[7.225677] (-) TimerEvent: {}
+[7.313885] (patrollingTask) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable publisher\x1b[0m\n'}
+[7.325777] (-) TimerEvent: {}
+[7.426101] (-) TimerEvent: {}
+[7.526654] (-) TimerEvent: {}
+[7.627039] (-) TimerEvent: {}
+[7.726181] (patrollingTask) StdoutLine: {'line': b'[100%] Built target publisher\n'}
+[7.727113] (-) TimerEvent: {}
+[7.743169] (patrollingTask) CommandEnded: {'returncode': 0}
+[7.777573] (patrollingTask) JobProgress: {'identifier': 'patrollingTask', 'progress': 'install'}
+[7.792935] (patrollingTask) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/joel/Descargas/IR2121/build/patrollingTask'], 'cwd': '/home/joel/Descargas/IR2121/build/patrollingTask', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'joel'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '1785'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/joel'), ('OLDPWD', '/home/joel'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1605'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/joel/Descargas/IR2121/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'joel'), ('JOURNAL_STREAM', '8:49333'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'joel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/joel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/joel:@/tmp/.ICE-unix/1823,unix/joel:/tmp/.ICE-unix/1823'), ('INVOCATION_ID', '9784b7e454a1428eb29620008502664a'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4262599e_dc3a_41cf_9d46_23a9d147f229'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.128'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joel/Descargas/IR2121/install/patrollingTask:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joel/Descargas/IR2121/build/patrollingTask'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/joel/Descargas/IR2121/install/patrollingTask:/opt/ros/foxy')]), 'shell': False}
+[7.807062] (patrollingTask) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.807474] (patrollingTask) StdoutLine: {'line': b'-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/lib/patrollingTask/publisher\n'}
+[7.811152] (patrollingTask) StdoutLine: {'line': b'-- Set runtime path of "/home/joel/Descargas/IR2121/install/patrollingTask/lib/patrollingTask/publisher" to ""\n'}
+[7.811445] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/package_run_dependencies/patrollingTask\n'}
+[7.811665] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/parent_prefix_path/patrollingTask\n'}
+[7.811864] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/ament_prefix_path.sh\n'}
+[7.812024] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/ament_prefix_path.dsv\n'}
+[7.812166] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/path.sh\n'}
+[7.812368] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/path.dsv\n'}
+[7.812500] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.bash\n'}
+[7.812629] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.sh\n'}
+[7.812766] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.zsh\n'}
+[7.812901] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.dsv\n'}
+[7.813029] (patrollingTask) StdoutLine: {'line': b'-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/package.dsv\n'}
+[7.813158] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/packages/patrollingTask\n'}
+[7.813287] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/cmake/patrollingTaskConfig.cmake\n'}
+[7.813421] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/cmake/patrollingTaskConfig-version.cmake\n'}
+[7.813552] (patrollingTask) StdoutLine: {'line': b'-- Up-to-date: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/package.xml\n'}
+[7.815033] (patrollingTask) CommandEnded: {'returncode': 0}
+[7.827311] (-) TimerEvent: {}
+[7.928103] (-) TimerEvent: {}
+[8.028584] (-) TimerEvent: {}
+[8.129890] (-) TimerEvent: {}
+[8.230368] (-) TimerEvent: {}
+[8.330818] (-) TimerEvent: {}
+[8.382376] (patrollingTask) JobEnded: {'identifier': 'patrollingTask', 'rc': 0}
+[8.383275] (-) EventReactorShutdown: {}
