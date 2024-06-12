@@ -1,0 +1,16 @@
+/home/joel/Descargas/IR2121/install/patrollingTask/lib/patrollingTask/publisher
+/home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/package_run_dependencies/patrollingTask
+/home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/parent_prefix_path/patrollingTask
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/ament_prefix_path.sh
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/ament_prefix_path.dsv
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/path.sh
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/path.dsv
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.bash
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.sh
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.zsh
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.dsv
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/package.dsv
+/home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/packages/patrollingTask
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/cmake/patrollingTaskConfig.cmake
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/cmake/patrollingTaskConfig-version.cmake
+/home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/package.xml

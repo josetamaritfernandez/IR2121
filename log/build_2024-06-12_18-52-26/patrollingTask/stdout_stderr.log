@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable publisher[0m
+[100%] Built target publisher
+-- Install configuration: ""
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/lib/patrollingTask/publisher
+-- Set runtime path of "/home/joel/Descargas/IR2121/install/patrollingTask/lib/patrollingTask/publisher" to ""
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/package_run_dependencies/patrollingTask
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/parent_prefix_path/patrollingTask
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/ament_prefix_path.sh
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/ament_prefix_path.dsv
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/path.sh
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/environment/path.dsv
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.bash
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.sh
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.zsh
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/local_setup.dsv
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/package.dsv
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/ament_index/resource_index/packages/patrollingTask
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/cmake/patrollingTaskConfig.cmake
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/cmake/patrollingTaskConfig-version.cmake
+-- Installing: /home/joel/Descargas/IR2121/install/patrollingTask/share/patrollingTask/package.xml

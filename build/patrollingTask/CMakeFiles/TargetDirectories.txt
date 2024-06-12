@@ -1,0 +1,10 @@
+/home/joel/Descargas/IR2121/build/patrollingTask/CMakeFiles/install/local.dir
+/home/joel/Descargas/IR2121/build/patrollingTask/CMakeFiles/edit_cache.dir
+/home/joel/Descargas/IR2121/build/patrollingTask/CMakeFiles/test.dir
+/home/joel/Descargas/IR2121/build/patrollingTask/CMakeFiles/install/strip.dir
+/home/joel/Descargas/IR2121/build/patrollingTask/CMakeFiles/publisher.dir
+/home/joel/Descargas/IR2121/build/patrollingTask/CMakeFiles/install.dir
+/home/joel/Descargas/IR2121/build/patrollingTask/CMakeFiles/list_install_components.dir
+/home/joel/Descargas/IR2121/build/patrollingTask/CMakeFiles/rebuild_cache.dir
+/home/joel/Descargas/IR2121/build/patrollingTask/CMakeFiles/patrollingTask_uninstall.dir
+/home/joel/Descargas/IR2121/build/patrollingTask/CMakeFiles/uninstall.dir
