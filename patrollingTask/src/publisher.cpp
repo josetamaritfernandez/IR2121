@@ -1,83 +1,113 @@
 #include <chrono>
-#include "geometry_msgs/msg/pose_stamped.hpp"
+#include <iostream>
+#include <cmath>
+#include <vector>
+#include <memory>
 #include "rclcpp/rclcpp.hpp"
-#include "geometry_msgs/msg/pose_with_covariance_stamped.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
+#include "tf2_ros/transform_listener.h"
+#include "tf2_ros/buffer.h"
+#include "tf2_geometry_msgs/tf2_geometry_msgs.h"
 
 using namespace std::chrono_literals;
 
-constexpr double x_start = -1;
-constexpr double y_start = 3;
-constexpr double z_start = 0;
-constexpr double w_start = 1;
-double p_x, p_y;
-int count = 0;
+class RobotNavigator : public rclcpp::Node
+{
+public:
+    RobotNavigator()
+        : Node("publisher"),
+          tf_buffer_(std::make_shared<rclcpp::Clock>()),
+          tf_listener_(tf_buffer_)
+    {
+        publisher_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("goal_pose", 10);
 
-void odom_callback(const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg) {
-    p_x = msg->pose.pose.position.x;
-    p_y = msg->pose.pose.position.y;
-}
+        goals_ = {
+            {5.26, -2.84},
+            {1.25, 3.57},
+            {-6.35, -1.17},
+            {-2.65, 3.19},
+            {-1.38, -1.14}
+        };
 
-int main(int argc, char *argv[]) {
-    rclcpp::init(argc, argv);
-    auto node = rclcpp::Node::make_shared("publisher");
-    auto publisher = node->create_publisher<geometry_msgs::msg::PoseStamped>("/goal_pose", 10);
-    auto subscription = node->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>("/amcl_pose", 10, odom_callback);
+        error_x_ = 1.9;
+        error_y_ = 0.6;
+        threshold_ = 0.55;
+        current_goal_index_ = 0;
 
-    size_t goal_index = 0;
-
-    std::vector<geometry_msgs::msg::PoseStamped> goals;
-    
-    geometry_msgs::msg::PoseStamped goal1;
-    goal1.pose.position.x = x_start;
-    goal1.pose.position.y = y_start;
-    goal1.pose.position.z = z_start;
-    goal1.pose.orientation.w = w_start;
-    goals.push_back(goal1);
-
-    geometry_msgs::msg::PoseStamped goal2;
-    goal2.pose.position.x = 3;
-    goal2.pose.position.y = 4.5;
-    goal2.pose.position.z = 0;
-    goal2.pose.orientation.w = 1;
-    goals.push_back(goal2);
-
-    geometry_msgs::msg::PoseStamped goal3;
-    goal3.pose.position.x = 8;
-    goal3.pose.position.y = -1.5;
-    goal3.pose.position.z = 0;
-    goal3.pose.orientation.w = 1;
-    goals.push_back(goal3);
-
-    geometry_msgs::msg::PoseStamped goal4;
-    goal4.pose.position.x = -5;
-    goal4.pose.position.y = -1.5;
-    goal4.pose.position.z = 0;
-    goal4.pose.orientation.w = 1;
-    goals.push_back(goal4);
-
-    geometry_msgs::msg::PoseStamped goal5;
-    goal5.pose.position.x = 1;
-    goal5.pose.position.y = 0;
-    goal5.pose.position.z = 0;
-    goal5.pose.orientation.w = 1;
-    goals.push_back(goal5);
-
-    rclcpp::WallRate loop_rate(500ms);
-
-    while (rclcpp::ok() && goal_index < goals.size()) {
-        publisher->publish(goals[goal_index]);
-        loop_rate.sleep(); 
-        count+=1;
-        if (std::abs(p_x-goals[goal_index].pose.position.x)<0.5 && std::abs(p_y-goals[goal_index].pose.position.y)<0.5 && count>100){
-            loop_rate.sleep(); 
-            goal_index+=1;
-            std::cout << "Pose reached"<< std::endl; 
-            count=0;
-        }
-
-        rclcpp::spin_some(node);
+        publish_next_goal();
     }
 
-    rclcpp::shutdown();
-    return 0;
+    bool check_goal_reached()
+    {
+        try
+        {
+            auto transform_stamped = tf_buffer_.lookupTransform("map", "base_link", tf2::TimePointZero);
+            double pose_x = transform_stamped.transform.translation.x;
+            double pose_y = transform_stamped.transform.translation.y;
+
+            if (is_goal_reached(pose_x, pose_y, goals_[current_goal_index_].first, goals_[current_goal_index_].second))
+            {
+                std::cout << "Objective reached: (" << goals_[current_goal_index_].first << ", " << goals_[current_goal_index_].second << ")\n";
+				if (current_goal_index_ < goals_.size() - 1)
+				{
+					current_goal_index_++;
+					publish_next_goal();
+					return false;
+				} else
+				{
+					std::cout << "Finished \n";
+					return true;
+				}
+			}
+		}
+		catch (tf2::TransformException &ex)
+			{
+			RCLCPP_WARN(this->get_logger(), "Error: %s", ex.what());
+			}
+		return false;
+	}
+
+private:
+	bool is_goal_reached(double pose_x, double pose_y, double goal_x, double goal_y)
+	{
+		double adjusted_goal_x = goal_x + error_x_;
+		double adjusted_goal_y = goal_y + error_y_;
+		double distance = std::sqrt(std::pow(pose_x - adjusted_goal_x, 2) + std::pow(pose_y - adjusted_goal_y, 2));
+		return distance < threshold_;
+	}	
+	void publish_next_goal()
+	{
+    	auto message = geometry_msgs::msg::PoseStamped();
+    	message.pose.position.x = goals_[current_goal_index_].first + error_x_;
+    	message.pose.position.y = goals_[current_goal_index_].second + error_y_;
+    	publisher_->publish(message);
+	}
+
+	rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr publisher_;
+	std::vector<std::pair<double, double>> goals_;
+	double error_x_;
+	double error_y_;
+	double threshold_;
+	size_t current_goal_index_;
+	tf2_ros::Buffer tf_buffer_;
+	tf2_ros::TransformListener tf_listener_;
+	
+};
+
+int main(int argc, char *argv[])
+{
+	rclcpp::init(argc, argv);
+	auto node = std::make_shared<RobotNavigator>();
+	rclcpp::Rate rate(20);
+	while (rclcpp::ok())
+	{
+    	if (node->check_goal_reached()) {
+        	break;
+    	}
+    	rclcpp::spin_some(node);
+    	rate.sleep();
+	}
+
+	rclcpp::shutdown();
+	return 0;
 }
